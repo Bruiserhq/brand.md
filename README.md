@@ -1,4 +1,4 @@
-# Tacit — Brand Context Protocol
+# Brand Context Protocol
 
 **Express and protect your brand in the age of the agent.**
 
