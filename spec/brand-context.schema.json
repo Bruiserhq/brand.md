@@ -1,6 +1,6 @@
 {
   "$schema": "<https://json-schema.org/draft/2020-12/schema>",
-  "$id": "<https://github.com/Bruiserhq/tacit/spec/brand-context.schema.json>",
+  "$id": "<https://github.com/Bruiserhq/brand.md/spec/brand-context.schema.json>",
   "title": "Brand Context Protocol v0.1",
   "description": "JSON Schema stub for validating BCP file frontmatter and structured blocks. v0.1 covers required frontmatter fields and canonical structured-block shapes. Full coverage ships with v0.2.",
   "type": "object",

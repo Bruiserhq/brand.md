@@ -463,7 +463,7 @@ Future versions will define graduated levels. v0.1 defines a single level.
 
 ### 16.4 Reference implementation
 
-The reference at `github.com/Bruiserhq/tacit/reference/.well-known/` is producer-conformant by definition.
+The reference at `github.com/Bruiserhq/brand.md/reference/.well-known/` is producer-conformant by definition.
 
 ---
 
@@ -511,7 +511,7 @@ Formal JSON Schema at `spec/brand-context.schema.json`. v0.1 covers required fro
 
 ### Appendix B. Reference implementation
 
-Conformant BCP published at `github.com/Bruiserhq/tacit/reference/.well-known/`.
+Conformant BCP published at `github.com/Bruiserhq/brand.md/reference/.well-known/`.
 
 ### Appendix C. Comparison to adjacent standards
 
@@ -546,4 +546,4 @@ See Section 2.
 
 ---
 
-*End of specification. Questions, issues, and pull requests: https://github.com/Bruiserhq/tacit*
+*End of specification. Questions, issues, and pull requests: https://github.com/Bruiserhq/brand.md*

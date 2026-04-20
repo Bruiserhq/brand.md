@@ -8,7 +8,7 @@ reviewed_by: pending legal review pre-launch
 
 # Claims
 
-All marketing claims Tacit is authorized to make, with supporting evidence. Agents generating copy pull from this file; they don't invent claims.
+All marketing claims Encoded is authorized to make, with supporting evidence. Agents generating copy pull from this file; they don't invent claims.
 
 ## Approved claims (post-Cannes launch)
 

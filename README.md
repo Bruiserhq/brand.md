@@ -1,62 +1,71 @@
-# Brand Context Protocol
+---
+
+# brand.md
 
 **Express and protect your brand in the age of the agent.**
 
-An open, machine-readable standard for brand identity in the agentic age.
+An open file format for machine-readable brand identity. Maintained by [Encoded](https://encodedbrands.com).
 
-**Tacit** is the company. **Brand Context Protocol (BCP)** is the open standard Tacit maintains.
+## What brand.md is
+
+A file format, not a service. A hierarchical set of markdown files that encode a brand's strategy, voice, judgment, boundaries, claims, and representation preferences — readable by every agent in the stack.
+
+Published at `{domain}/.well-known/brand.md`. Same convention as `robots.txt` and `sitemap.xml`.
+
+Not an MCP server. Not a runtime. Not a SaaS. A file tree a brand authors once that every agent reads before it acts.
 
 ## Status
 
-This repo is **private, pre-v0.1 working draft**. Shared with a small number of technical partners by invite ahead of public release. Nothing in this repo should be treated as final.
+Pre-v0.1 working draft. The spec will change. If you're reading this before June 15, 2026, you're early.
 
-## What BCP is
+## File structure
 
-BCP encodes a brand's strategy, voice, judgment, boundaries, claims, and representation preferences into a hierarchical file set every agent in the stack can read — internal brand agents, vendor platforms (Zefr, Canva, Adobe, Meta, DSPs), and third-party consumer agents (ChatGPT, Claude, Perplexity, Gemini).
+```text
+.well-known/
+├── brand.md              # root — identity, positioning, tagline (<3KB)
+└── brand/
+    ├── voice.md          # tone, register, vocabulary, prefer/avoid
+    ├── values.md         # priority-ordered, observable
+    ├── visual.md         # color, typography, imagery direction
+    ├── boundaries.md     # brand safety — IAB 3.0 + GARM aligned
+    ├── claims.md         # legal-reviewed, evidenced
+    ├── representation.md # how third-party consumer agents describe the brand
+    ├── audiences/       # per-segment voice and positioning
+    ├── products/        # per-SKU overrides
+    └── campaigns/       # campaign-scoped overrides with sunset dates
+```
 
-Structurally analogous to AGENTS.md and MCP. Published at `{domain}/.well-known/brand.md`, same convention as `robots.txt` and `sitemap.xml`.
+Root declares what daughters exist. Agents resolve lazily by task — a media-buying agent pulls boundaries and claims, a copy agent pulls voice and audience, a creative-gen agent pulls visual and voice.
 
-This is **v0.1**. The spec will change. If you're reading this before June 15, 2026, you're early — and your feedback shapes what ships.
+## Three consumption surfaces
 
-## Why this exists
+**Inside** — the brand's own agents (copy, creative, media, compliance). brand.md preserves senior-strategist judgment at machine scale.
 
-In the next 12 to 36 months, most marketing teams will be staffed with more agents than humans. The tested brand judgment that lives in senior marketers' heads — the "we don't say it that way," the instinct for what's on-brand at the edge, the contextual call on what's acceptable adjacency — has no machine-readable home.
+**Across** — vendor platforms (Zefr, Canva, Adobe, Meta, DSPs). Their agents read brand.md to make better decisions on the brand's behalf.
 
-Without one, internal agents produce generic output, vendor platforms make decisions with partial information, and third-party consumer agents describe brands however the model guesses. BCP is the brand-authored source of truth those agents read before they act.
+**Beyond** — third-party consumer agents (ChatGPT, Claude, Perplexity, Gemini). brand.md is the first time a brand gets input into how consumer agents describe it.
 
-The job is simple, stated in two verbs: **express and protect your brand** across every agent in the stack. BCP is the file format that makes both verbs work at machine scale.
+## The formal spec
+
+The full specification — file discovery, resolution model, versioning, taxonomy alignment, localization — is documented as the Brand Context Protocol in [SPEC.md](SPEC.md). brand.md is the file. The Brand Context Protocol defines how it works.
 
 ## How to read this repo with an agent
 
-If you're opening this with Claude Code, Cursor, or any agent: start at `SPEC.md`, then `spec/hypotheses.md`, then walk `reference/.well-known/brand.md` and its daughter files. The reference implementation is Tacit's own BCP — we dogfood.
+Start at `SPEC.md`, then `spec/hypotheses.md`, then walk `reference/.well-known/brand.md` and its daughter files. The reference implementation is Encoded's own brand.md — we dogfood.
 
-## License (applies on public release)
+## Get your brand.md
 
-Dual license.
+The fastest path: copy the [authoring prompt](https://encodedbrands.com/start), paste it into any capable AI, answer 18 questions, publish the output at your domain. Free forever.
 
-- **Spec and reference implementation:** Creative Commons Attribution 4.0 (see `LICENSE-SPEC`)
-- **Code, validators, SDKs, tooling:** MIT (see `LICENSE-CODE`)
+Need senior-strategist quality: [encodedbrands.com/encode](https://encodedbrands.com/encode).
 
-Schema.org and the W3C use this pattern. While the repo is private, license files are included but do not take effect for third parties until the repo goes public.
+## License
 
-## v0.1 has
+- **Spec:** Creative Commons Attribution 4.0 — [LICENSE-SPEC](LICENSE-SPEC)
+- **Code:** MIT — [LICENSE-CODE](LICENSE-CODE)
 
-File format, hierarchical resolution model, well-known path convention, reference implementation, JSON Schema stub, draft brand-safety taxonomy alignment to IAB Content Taxonomy 3.0 and GARM Brand Safety Floor + Suitability Framework.
-
-## v0.1 doesn't have yet
-
-Complete formal validator, Living BCP monitoring layer, Forge authoring wizard, native platform integrations. All shipping post-Cannes.
-
-## Feedback wanted
-
-Particularly on:
-
-1. **Brand-safety taxonomy mapping** — where IAB 3.0 and GARM have gaps real systems route around.
-2. **Versioning ergonomics** — whether the three-layer model is right for platform caching.
-3. **Localization inheritance** — parallel subtrees vs. overrides, which works for editorial workflows.
-
-Open issues or PRs in this repo. Discussion is private to invited collaborators until Cannes.
+Same pattern as schema.org, W3C, and MCP.
 
 ## Maintained by
 
-Tacit — the company building the standard for brands to express and protect themselves in the age of the agent. Website: pending.
+[Encoded](https://encodedbrands.com) — a brand consultancy and protocol company.

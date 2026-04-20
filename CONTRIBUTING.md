@@ -1,4 +1,4 @@
-# Contributing to Tacit / BCP
+# Contributing to Encoded / BCP
 
 This spec is pre-v1.0 and evolving. We want real-world feedback from:
 
@@ -22,7 +22,7 @@ This spec is pre-v1.0 and evolving. We want real-world feedback from:
 
 ## Governance
 
-v0.1 through v1.0: benevolent dictator model. Tacit maintains, accepts issues and PRs, and publishes a decision log for spec changes.
+v0.1 through v1.0: benevolent dictator model. Encoded maintains, accepts issues and PRs, and publishes a decision log for spec changes.
 
 Post-v1.0: transition to a published governance model with external spec contributors. Exact structure TBD and will be proposed publicly before v1.0.
 

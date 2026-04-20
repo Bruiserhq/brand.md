@@ -23,7 +23,7 @@ Product and partnerships leaders at platforms whose agents make decisions on the
 
 - To be told how to run their product.
 - A spec that forces them to rebuild core infrastructure.
-- To feel like Tacit is positioning itself between them and their customer.
+- To feel like Encoded is positioning itself between them and their customer.
 - Lock-in or exclusivity that reduces their optionality.
 
 ## Voice shifts
