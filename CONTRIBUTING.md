@@ -38,7 +38,7 @@ Post-v1.0: transition to a published governance model with external spec contrib
 **Out of scope (for now):**
 - Building a formal validator (v0.2)
 - Living BCP monitoring layer (v0.2+)
-- Forge authoring wizard (separate repo, post-Cannes)
+- Encoder authoring tool (separate repo, post-Cannes)
 - Native platform integrations (bilateral work with partners)
 
 ## Code of conduct

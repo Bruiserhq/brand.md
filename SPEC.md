@@ -409,7 +409,7 @@ Ring 1 for one-off queries and stateless consumers. Ring 2 for developer authori
 
 Producers **MAY** author manually in any text editor using this specification as reference.
 
-### 14.2 Forge-assisted authoring (v0.2 preview)
+### 14.2 Encoder-assisted authoring (v0.2 preview)
 
 Future tooling will provide guided authoring with signal extraction and drift detection. Not required for conformance.
 
