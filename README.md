@@ -8,11 +8,11 @@ An open file format for machine-readable brand identity. Maintained by [Encoded]
 
 ## What brand.md is
 
-A file format, not a service. A hierarchical set of markdown files that encode a brand's strategy, voice, judgment, boundaries, claims, and representation preferences — readable by every agent in the stack.
+A hierarchical set of markdown files that encode a brand's strategy, voice, judgment, boundaries, claims, and representation preferences — readable by every agent in the stack.
 
 Published at `{domain}/.well-known/brand.md`. Same convention as `robots.txt` and `sitemap.xml`.
 
-Not an MCP server. Not a runtime. Not a SaaS. A file tree a brand authors once that every agent reads before it acts.
+Not an MCP server. Not a runtime. Not a SaaS. A file tree a brand authors and updates and that that every agent reads before it acts.
 
 ## Status
 
